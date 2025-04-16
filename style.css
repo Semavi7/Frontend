@@ -1,0 +1,28 @@
+p {
+    color: blue;
+    text-align: center;
+    font-size: larger;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border: 5px double black;
+    border-radius: 5px;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(d1.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6; /* Flu görünüm için opaklık ayarı */
+    z-index: -1; /* Arka planda kalmasını sağlar */
+}
