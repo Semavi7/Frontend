@@ -97,36 +97,71 @@
 //     }
 //     alert("İsim ve Tckn problemsiz girildi");
 // }
-debugger
-let yenisatır = "\r\n";
-let bakiye = 1000;
+// debugger
+// let yenisatır = "\r\n";
+// let bakiye = 1000;
 
-let metin = "1. Bakiye Görüntüleme" + yenisatır + "2. Para Yatırma" + yenisatır + "3. Para Çekme" + yenisatır + "4. Çıkış Yapma" + yenisatır + "Lütfen yapmak istediğiniz işlemi seçiniz: ";
+// let metin = "1. Bakiye Görüntüleme" + yenisatır + "2. Para Yatırma" + yenisatır + "3. Para Çekme" + yenisatır + "4. Çıkış Yapma" + yenisatır + "Lütfen yapmak istediğiniz işlemi seçiniz: ";
 
-let seçim = prompt(metin);
+// let seçim = prompt(metin);
 
-switch(seçim){
-    case "1":
-        alert("Bakiyeniz: " + bakiye + " TL");
+// switch(seçim){
+//     case "1":
+//         alert("Bakiyeniz: " + bakiye + " TL");
+//         break;
+//     case "2":
+//         let yatir = Number(prompt("Yatırmak istediğiniz miktarı giriniz: "));
+//         bakiye += yatir;
+//         alert("Yeni Bakiyeniz: " + bakiye + " TL");
+//         break;
+//     case "3":
+//         let cek = Number(prompt("Çekmek istediğiniz miktarı giriniz: "));
+//         if(cek > bakiye){
+//             alert("Yetersiz bakiye!");
+//         }
+//         else{
+//             bakiye -= cek;
+//             alert("Yeni Bakiyeniz: " + bakiye + " TL");
+//         }
+//         break;
+//     case "4":
+//         alert("Çıkış yapıldı!");
+//         break;
+//     default:
+//         alert("Geçersiz seçim!");
+// }
+
+// for(let i=1 ; i<=10 ; i++){
+//     if(i%2 == 1){
+//         console.log("Burchan")
+//     }
+//     else{
+//         console.log("Naber");
+//     }
+// }
+
+// let toplam = 0;
+// for(let i = 50 ; i>=1 ; i--){
+//     toplam += i;
+//     console.log(i);
+// }
+
+// console.log("Toplam: " + toplam);
+
+// let sayac = 0;
+
+// while(sayac <= 10){
+//     if(sayac %2 == 0){
+//         console.log(sayac);
+//     }
+//     sayac++;
+// }
+
+let sayac = 1;
+while(true){
+    console.log(sayac);
+    if(sayac == 7 ){
         break;
-    case "2":
-        let yatir = Number(prompt("Yatırmak istediğiniz miktarı giriniz: "));
-        bakiye += yatir;
-        alert("Yeni Bakiyeniz: " + bakiye + " TL");
-        break;
-    case "3":
-        let cek = Number(prompt("Çekmek istediğiniz miktarı giriniz: "));
-        if(cek > bakiye){
-            alert("Yetersiz bakiye!");
-        }
-        else{
-            bakiye -= cek;
-            alert("Yeni Bakiyeniz: " + bakiye + " TL");
-        }
-        break;
-    case "4":
-        alert("Çıkış yapıldı!");
-        break;
-    default:
-        alert("Geçersiz seçim!");
+    }
+    sayac++;
 }
