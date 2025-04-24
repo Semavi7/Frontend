@@ -157,11 +157,124 @@
 //     sayac++;
 // }
 
-let sayac = 1;
-while(true){
-    console.log(sayac);
-    if(sayac == 7 ){
-        break;
-    }
-    sayac++;
-}
+// let sayac = 1;
+// while(true){
+//     console.log(sayac);
+//     if(sayac == 7 ){
+//         break;
+//     }
+//     sayac++;
+// }
+
+// let sayac = 0;
+
+// while(sayac <= 10){
+//     sayac++;
+//     if(sayac>10){
+//         break;
+//     }
+//     if(sayac == 8){
+//         continue;
+//     }
+//     console.log(sayac);
+// }
+
+// for(let i = 1; i<=10; i++){
+//     for(let j = 1; j<=10; j++){
+//         console.log(i + " x " + j + " = " + (i*j));
+//     }
+//     console.log("-----------------")
+// }
+
+// let sayi = Number(prompt("Bir sayı giriniz: "));
+// let asalmi = true;
+// for(let i = 2; i < sayi; i++){
+//     if(sayi % i == 0){
+//         asalmi = false;
+//         break;
+//     }
+// }
+// if(asalmi){
+//     alert(sayi + " asal bir sayıdır.");
+// }
+// else{
+//     alert(sayi + " asal bir sayı değildir.");
+// }
+
+// let donenDeger = cube(2);
+// kareAl(donenDeger);
+
+// function kareAl(sayi){
+//     let sonuc = sayi * sayi;
+//     console.log(sonuc);
+// }
+
+// function cube(sayi){
+//     let sonuc = sayi * sayi * sayi;
+//     return sonuc;
+// }
+
+// let metin = prompt("Bir metin giriniz: ");
+
+// let harf = prompt("Harf giriniz: ");
+
+// let sonuc = bul(harf);
+// alert("Harf Sayısı: " + sonuc);
+
+// function bul(harf){
+//     let toplam = 0;
+//     for(let i = 0; i<metin.length ; i++){
+//         if(metin.charAt(i).toLocaleLowerCase() === harf.toLocaleLowerCase()){
+//             toplam += 1;
+//         }
+//     }
+//     return toplam;
+// }
+
+// let number = prompt("Bir sayı giriniz: ");
+
+// convertDecimalToBinary(number);
+
+// function convertDecimalToBinary(number){
+//     let binary="";
+//     while(true){
+//         binary += (number % 2 ).toString();
+//         number = Math.floor(number / 2);
+//         if(number == 1){
+//             binary +=1;
+//             break;
+//         }
+//     }
+//     let result = reserve(binary);
+//     alert("Sonuç : " + result);
+// }
+
+// function reserve(binary){
+//     let reverseBinary = "";
+//     for(let i = binary.length - 1; i >= 0; i--){
+//         reverseBinary += binary.charAt(i);
+//     }
+//     return reverseBinary;
+// }
+
+// let binary = prompt("Binary sayı giriniz: ");
+
+// function convertBinaryToDecimal(binary){
+//     let toplam = 0;
+//     let ust = 0;
+//     for(let i = binary.length-1 ; i>=0 ; i--){
+//         if(Number(binary.charAt(i))!=0){
+//             toplam += Number(binary.charAt(i)) * Math.pow(2, ust);
+//         }
+//         ust++;
+//     }
+//     alert("Sonuç: " + toplam);
+// }
+
+// convertBinaryToDecimal(binary);
+
+let isimler = ["enes", "ahmet", "mehmet", "ali", "ayşe"];
+
+isimler.forEach(function(isim){
+    console.log(isim);
+});
